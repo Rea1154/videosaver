@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Video Saver</title>
+  </head>
+  <body>
+    <main>
+      <div class="text-container">
+        <h1>
+          Important <br />
+          Youtube Videos
+        </h1>
+        <p>
+          You can save Youtube videos, <br />
+          that you would like to rewatch.
+        </p>
+      </div>
+
+      <div class="form-container">
+        <div class="label-container">
+          <label for="video-id-input">Video ID</label>
+          <i class="fa-solid fa-question question-icon"></i>
+          <span class="span-hidden whatisidtext">
+            The Id is v=<span class="whatisid">vewTtKgLfQs</span>& in the video
+            url</span
+          >
+        </div>
+        <input id="video-id-input" type="text" placeholder="vewTtKgLfQs" />
+        <button class="save-video-btn">Save Video</button>
+      </div>
+    </main>
+    <section class="video-container">
+      <ul class="video-container-ul"></ul>
+    </section>
+    <div class="videoplayer hidden">
+      <iframe
+        class="iframe"
+        width="500"
+        height="300"
+        frameborder="0"
+        allow="autoplay;accelerometer;picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

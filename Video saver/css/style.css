@@ -1,0 +1,187 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: white;
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(to right top, #051937, #522f5b, #9e4568, #da6d5e, #f4aa4f);
+}
+
+main {
+  margin-top: 7rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.text-container {
+  padding: 3rem;
+}
+.text-container h1 {
+  font-size: 4rem;
+  line-height: 1.1;
+}
+.text-container p {
+  font-size: 1.6rem;
+  color: #e6e6e6;
+}
+
+.form-container {
+  width: 31rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form-container .label-container {
+  margin-bottom: 1rem;
+}
+.form-container .label-container span {
+  font-size: 1.5rem;
+  line-height: 1.9;
+}
+.form-container .label-container .span-hidden {
+  display: none;
+}
+.form-container .label-container .whatisid {
+  border-radius: 5px;
+  border: 1px solid palevioletred;
+  color: #f4aa4f;
+  padding: 0.5rem;
+}
+.form-container label {
+  font-size: 1.3rem;
+  color: #e6e6e6;
+  margin-right: 2rem;
+}
+.form-container .question-icon {
+  color: #e6e6e6;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 0.5rem 0.7rem;
+  margin-right: 0.5rem;
+}
+.form-container .question-icon:hover {
+  color: white;
+}
+.form-container input {
+  width: 100%;
+  height: 3.5rem;
+  border-radius: 5px;
+  margin-bottom: 0.2rem;
+}
+.form-container button {
+  height: 3.5rem;
+  border-radius: 5px;
+  background-color: palevioletred;
+  color: black;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.form-container button:hover {
+  color: white;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+ul li {
+  position: relative;
+  list-style: none;
+  width: 30rem;
+  height: 20rem;
+  margin: 3rem;
+  cursor: pointer;
+}
+ul li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+ul li .delete-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 100%;
+  font-size: 2.2rem;
+  cursor: pointer;
+  position: absolute;
+  bottom: -1.2rem;
+  left: -1.2rem;
+  background-color: palevioletred;
+  color: white;
+  border: none;
+  transition: 0.5s;
+  z-index: 666;
+}
+ul li .delete-btn:hover {
+  color: black;
+}
+
+.videoplayer {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+.videoplayer .iframe {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hidden {
+  display: none;
+}
+
+.play-icon {
+  font-size: 4rem;
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  pointer-events: none;
+}
+.play-icon:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/*Media*/
+@media (max-width: 40em) {
+  main {
+    text-align: center;
+  }
+  .text-container h1 {
+    margin-bottom: 1rem;
+  }
+  iframe {
+    width: 30rem;
+    height: 20rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
