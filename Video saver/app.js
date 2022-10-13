@@ -31,7 +31,7 @@ const displayVideos = () => {
   });
 
   videoIdArr.forEach((video) => {
-    //!existingVideosId.includes(video[1]
+    // display video if we don't have it
     if (!existingVideosId[video[1]]) {
       videoContainerUl.innerHTML += `<li class="video-li ${video[0]}">
         <img src="http://img.youtube.com/vi/${video[1]}/0.jpg">
